@@ -64,17 +64,17 @@ const NavBar: React.FC<{}> = () => {
                                 </div>
                                 <div className='nav_cell'>
                                     <li>
-                                        <Link className='nav_link text-white' href="/about">Eligibility & Benefits</Link>
+                                        <Link className='nav_link text-white' href="/eligibility">Eligibility & Benefits</Link>
                                     </li>
                                 </div>
                                 <div className='nav_cell'>
                                     <li>
-                                        <Link className='nav_link text-white' href="/faculty">Events</Link>
+                                        <Link className='nav_link text-white' href="/events">Events</Link>
                                     </li>
                                 </div>
                                 <div className='nav_cell'>
                                     <li>
-                                        <Link className='nav_link text-white' href="/contact">FAQ & Resources</Link>
+                                        <Link className='nav_link text-white' href="/faq">FAQ & Resources</Link>
                                     </li>
                                 </div>
                             </ul>

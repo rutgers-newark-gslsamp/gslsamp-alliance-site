@@ -2,7 +2,7 @@
 
 import Title from '../../src/components/Title.tsx';
 
-export default function Faculty() {
+export default function Events() {
     return(
         <>
             {/* <Title name={"Faculty"} /> */}

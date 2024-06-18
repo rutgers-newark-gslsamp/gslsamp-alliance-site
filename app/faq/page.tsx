@@ -2,7 +2,7 @@ import Title from "../../src/components/Title.tsx";
 import ContactForm from "../../src/components/ContactForm.tsx";
 import FAQSection from "../../src/components/FaqSection.tsx";
 
-export default function Contact() {
+export default function Faq() {
   return (
     <>
       {/* <Title name={"CONTACT US"}/> */}
