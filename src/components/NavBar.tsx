@@ -94,19 +94,13 @@ const NavBar: React.FC<{}> = () => {
                             <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase ' href="/">Home</Link>
                         </li>
                         <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/about">About Us</Link>
+                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/eligibility">Eligibility & Benefits</Link>
                         </li>
                         <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/faculty">Faculty</Link>
+                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/events">Events</Link>
                         </li>
                         <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4] '>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/membership">Membership</Link>
-                        </li>
-                        <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/events">Events & Opportunities</Link>
-                        </li>
-                        <li className='w-full h-full flex justify-center items-center'>
-                                <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/contact">Contact Us</Link>
+                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/faq">FAQs & Resources</Link>
                         </li>
                     </ul>
                 </div>
