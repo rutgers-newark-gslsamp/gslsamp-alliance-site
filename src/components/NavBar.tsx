@@ -17,12 +17,13 @@ const NavBar: React.FC<{}> = () => {
     const hideDiv = () => {
         setIsVisible(!isVisible);
     };
+
     return (
         <>
             {/* desktop nav bar*/}
             <nav className='flex flex-col w-full bg-burgundy sticky z-30 top-0'>
                 <div className='flex flex-wrap items-center justify-between sm:h-auto w-full' id='top-nav-container'>
-                    <header className='flex items-center'>
+                    <header id="nav_header" className='flex w-full items-center justify-between'>
                         <div className='flex my-1 p-2 gap-2' id='nav-logo-wrapper'>
                             <Image
                                 className='flex h-auto py-3 px-2 drop-shadow'
@@ -38,19 +39,25 @@ const NavBar: React.FC<{}> = () => {
                                 width={55}
                                 height={55}
                             />
+                            <h1 className='flex py-3 ml-4 text-xs text-white sm:text-base md:text-lg font-semibold sm:font-medium'>
+                                Garden State-Louis Stokes Alliance <br className='sm:hidden'/> for Minority Participation
+                            </h1>
                         </div>
-                        <h1 className='flex ml-4 text-xs text-white sm:text-base md:text-lg font-semibold sm:font-medium'>
-                            Garden State-Louis Stokes Alliance for Minority Participation
-                        </h1>
-                        <a onClick={hideDiv} className='flex mx-2 justify-center items-center w-10 hover:cursor-pointer'>
+
+                        
+                        
+                        
+                        <a onClick={hideDiv} id="hamburger" className='flex mx-2 w-10 hover:cursor-pointer'>
                             <Image
-                                className='w-auto px-2 drop-shadow grayscale sm:invisible'
+                                className='w-auto px-2 drop-shadow grayscale'
                                 src={menuIcon}
                                 alt="Hamburger Menu Icon"
                                 width={50}
                                 height={50}
-                                />
+                            />
                         </a>
+                        
+                        
                     </header>
 
                     {/* should disappear on small screens */}
@@ -87,7 +94,7 @@ const NavBar: React.FC<{}> = () => {
             
             {/* mobile nav bar*/}
             {isVisible && (
-                <div id='mobile-nav' className='fixed left-0 top-0 w-full bg-gray-100 z-50 mt-14 h-[92vh]'>
+                <div id='mobile-nav' className='fixed left-0 top-4 w-full bg-gray-100 z-50 mt-16 h-[92vh]'>
                     <ul className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap text-white font-bold my-1 mx-5 list-none no-underline nav-page-list' id="bottom-nav-page-list">
                         {/* FIXME: GLOBAL CSS FOR HOVER EFFECT IS NOT WORKING */}
                         <li className='w-screen h-full flex justify-center items-center border-b border-[#D4D4D4]'>

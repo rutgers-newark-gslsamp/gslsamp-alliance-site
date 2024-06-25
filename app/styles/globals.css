@@ -16,18 +16,37 @@ body {
 }
 
 /*MOBILE NAVIGATION*/
-@media (max-width: 640px) {
+
+#hamburger {
+  display: none;
+}
+
+@media (max-width: 1210px) {
   #navigation-pc {
     display: none;
   }
 
- 
+  #hamburger {
+    display: block;
+  }
+
+  #nav_header {
+    width: 100%;
+  }
 }
+
+@media (min-width: 1210px) {
+  #nav_header {
+    width: auto;
+  }
+}
+
 
 @media (min-width: 641px) {
   #navigation-mobile {
     display: none;
   }
+  
 }
 
 /* NAVIGATION MENU */
@@ -114,7 +133,6 @@ body {
 }
 
 /* Responsive Top Nav */
-
 
 
 
