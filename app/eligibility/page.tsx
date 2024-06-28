@@ -1,64 +1,39 @@
-import rabinovich from "../../public/staff-pictures/rabinovich.jpeg"
-import sanMiguel from "../../public/staff-pictures/Dr_San_Miguel.jpg"
-import gates from "../../public/staff-pictures/Dr_Gates.jpg"
-import StaffCard from "../../src/components/StaffCard";
-import EventInfoCard from "../../src/components/EventInfoCard";
-import Title from "../../src/components/Title.tsx";
-import Carousel from "../../src/components/Carousel";
-
-import image1 from "../../public/club-carousel/image1.jpg";
-import image2 from "../../public/club-carousel/image2.jpg";
-import image3 from "../../public/club-carousel/image3.jpg";
-import image4 from "../../public/club-carousel/image4.jpg";
-import image5 from "../../public/club-carousel/image5.jpg";
+import Title from "../../src/components/Title";
 
 export default function Eligibility() {
-  const images = [image1, image2, image3, image4, image5];
-
   return (
     <>
       {/*Title component*/}
-      <main className="about-description-container">
-        {/* <Title name={"ABOUT US"} /> */}
+      <Title name={"Eligibility for Admission"}/>
+
+      {/* Content specific to Eligibility & Benefits page */}
+      <main className="flex justify-center align-middle w-auto pt-[1rem]">
+        {/* Program requirements */}
+        <div id="eligibility_container" className="w-full flex justify-center">
+          <div className="flex flex-col items-center w-[90%] md:w-[60%] mt-[1rem] justify-center mb-2 bg-white border-2 border-burgundy rounded-lg shadow-md">
+            <article className="overflow-auto w-full">
+              <h1 className="text-center w-full p-1 bg-burgundy text-white text-sm md:text-xl font-medium drop-shadow-md rounded-tl-xlg rounded-tr-xlg">
+                To become an LSAMP Scholar, you must...
+              </h1>
+
+              <div className="text-sm md:text-base font-medium px-2 drop-shadow-md text-black py-2">        
+                <div className="list-decimal-m">Be a US citizen or permanent resident.</div>
+                <div className="list-decimal-m">Improve participation of underserved racial or ethnic groups in STEM.</div>
+                <div className="list-decimal-m">Be fully matriculated at your Alliance school.</div>
+                <div className="list-decimal-m">Major or intend to major in a non-medical STEM field.</div>
+              </div>
+            </article>
+
+            <h2 className="text-center underline font-bold text-burgundy">Eligible Majors</h2>
+            <div className="w-[90%] h-[40vh] m-2 border-2 border-burgundy rounded-lg drop-shadow-md">
+              <iframe className="w-full h-full" src="https://drive.google.com/file/d/1C9923MSHlXUsvkS08pFduFjVi_FKw29V/preview" allow="autoplay"></iframe>
+            </div>
+          </div>
+        </div>
+
+        
         
       </main>
-
-
-
-
-      {/* <section className="staff-section-container">
-        <div className="section-subheader mx-4 md:mx-8 lg:mx-16">
-          <h2 className="text-3xl font-bold text-neutral-800">Staff</h2>
-          <hr/>
-        </div>
-        <div id="staff-card-container" className="grid md:grid-cols-2 lg:grid-cols-3 mx-4 md:mx-16">
-          <StaffCard 
-            picture={gates}
-            name="Alexander Gates, PhD"
-            role="Executive Director of GS-LSAMP"
-            university="Rutgers University - Newark"
-            email="agates@newark.rutgers.edu"
-            phone="(973) 353-5034"
-          />
-          <StaffCard 
-            picture={sanMiguel}
-            name="Cristiane San Miguel, Ph.D"
-            role="Assistant Director of GS-LSAMP"
-            university="Rutgers University - Newark"
-            email="csanmig@newark.rutgers.edu"
-            phone="(973) 353-5846"
-          />
-          <StaffCard 
-            picture={rabinovich}
-            name="Oren Rabinovich"
-            role="Director of GS-LSAMP"
-            university="Rutgers University - Newark"
-            email="oren.rabinovich@rutgers.edu"
-            phone="(973) 353-3562"
-          />
-        </div>
-      </section> */}
-   
     </>
   );
 }
