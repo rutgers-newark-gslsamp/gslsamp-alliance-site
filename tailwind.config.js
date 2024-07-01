@@ -20,6 +20,7 @@ module.exports = {
         'mid_burgundy': '#631918',
         'off_white': '#ECECED',
         'dark_off_white': '#D9D9D9',
+        'light_burgundy': '#D9C7C7',
       },
     },
   },
