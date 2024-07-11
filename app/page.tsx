@@ -23,6 +23,7 @@ export default function Home() {
       </main>
 
       <section className="flex justify-center my-8 md:my-16 md:mx-8">
+        
       </section>
 
       <section id='lsamp-alliance-container'>
