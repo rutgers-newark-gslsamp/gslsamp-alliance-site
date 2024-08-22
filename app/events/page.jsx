@@ -1,54 +1,83 @@
-'use client'
+'use client';
 
-import Title from '../../src/components/Title.tsx';
+import { useState } from 'react';
 
 export default function Events() {
-    return(
+    const [showVideo, setShowVideo] = useState(false);
+
+    return (
         <>
-            {/* <Title name={"Faculty"} /> */}
-            {/* <p className='whitespace-normal mx-8 md:mx-16 lg:mx-28'>
-                The Garden-State Louis Stokes Alliance for Minority Participation (GS-LSAMP) has been supported by the National Science Foundation since 2009. Its mission has been to increase the interest, retention, and graduation and success of students from racial and ethnic groups that are historically underrepresented in STEM fields. As part of Phase III of the program (2019-2024), one of the program goals is to increase the number of LSAMP scholars continuing to graduate school.
-                <br/><br/>
-                Undergraduate research is an essential activity for students to gain the skills and motivation required to pursue and complete their PhD and embark on a research career. We are seeking STEM faculty mentors who will provide our scholars with inspiration, encouragement, and an excellent research experience. Faculty members from any 4-year accredited colleges and universities are also invited to apply to serve as research mentors to LSAMP scholars. 
-                <br/><br/>
-                Faculty members interested in serving as research mentors for LSAMP scholars are invited to submit project descriptions here. 
-                <br/><br/>
-                We will provide students with a brief description of the research performed in your laboratory as well as a description of a specific research project. You will have the opportunity to meet and interview interested students before agreeing to serve as a mentor. 
-                <br/><br/>
-                We are seeking faculty from any 4-year accredited colleges and universities nationally and internationally. 
-                <br/><br/>
-                Faculty can also recommend <a className='underline italic text-red-800 font-medium hover:text-blue-800' href='/membership' target='_blank'>eligible</a> students for the LSAMP program by directing them to our application page.   
-                <br/><br/>
-                If you'd like to learn more about the GS-LSAMP program, don't hesitate to reach out to us through our <span className='underline italic text-red-800 hover:text-blue-800'><a className='font-medium' href='/contact'>contact form</a></span>.
-               
-                The Garden-State Louis Stokes Alliance for Minority Participation (GS-LSAMP) has been supported by the National Science Foundation since 2009. Its mission has been to increase the interest, retention, and graduation and success of students from racial and ethnic groups that are historically underrepresented in STEM fields. As part of Phase III of the program (2019-2024), one of the program goals is to increase the number of LSAMP scholars continuing to graduate school.
-                <br/><br/>
-                Undergraduate research is an essential activity for students to gain the skills and motivation required to pursue and complete their PhD and embark on a research career. We are seeking STEM faculty mentors who will provide our scholars with inspiration, encouragement, and an excellent research experience. Faculty members from any 4-year accredited colleges and universities are also invited to apply to serve as research mentors to LSAMP scholars. 
-                <br/><br/>
-                Faculty members interested in serving as research mentors for LSAMP scholars are invited to submit project descriptions here. 
-                <br/><br/>
-                We will provide students with a brief description of the research performed in your laboratory as well as a description of a specific research project. You will have the opportunity to meet and interview interested students before agreeing to serve as a mentor. 
-                <br/><br/>
-                We are seeking faculty from any 4-year accredited colleges and universities nationally and internationally. 
-                <br/><br/>
-                Faculty can also recommend <a className='underline italic text-red-800 font-medium hover:text-blue-800' href='/membership' target='_blank'>eligible</a> students for the LSAMP program by directing them to our application page.   
-                <br/><br/>
-                If you'd like to learn more about the GS-LSAMP program, don't hesitate to reach out to us through our <span className='underline italic text-red-800 hover:text-blue-800'><a className='font-medium' href='/contact'>contact form</a></span>.
-               
-            </p> */}
+            <div className="flex justify-center bg-gray-200"> 
+                <section className="relative w-[90vw] lg:w-[75vw] bg-white shadow-lg rounded-lg overflow-hidden">  
 
-            
-            {/* <div className='md:ml-16 lg:ml-16 xl:ml-16 flex justify-center gap-4 mx-4 my-2'>
-                <button className="flex-1 max-w-xs w-1/2 text-center bg-red-800 rounded-md p-2 mt-8 col-span-1 text-white font-bold shadow-md hover:scale-105 transition overflow-hidden h-22">
-                    <a href="https://forms.gle/SGEfGNpPvkSZzsQR6" target='_blank' className="text-xs md:text-sm break-words">Invite GS-LSAMP Scholars<br className="md:hidden"/> to Collaborate</a>
-                </button>
+                    {/* Header Section */}
+                    <div className="relative bg-red-800">
+                        <h2 className="text-center text-white md:text-[1.5rem] lg:text-[1.8rem] drop-shadow-lg font-regular py-4">
+                            GS-LSAMP Events
+                        </h2>
+                    </div>
 
-                <button className="flex-1 max-w-xs w-1/2 h-12 p-2 mt-8 hover:underline rounded-md border-4 border-red-800 shadow-md hover:scale-105 transition h-22">
-                    <a className="flex items-center justify-center font-bold text-red-800 uppercase" href="/about" target='_blank'>Learn More</a>
-                </button>
-            </div> */}
-            
-            
+                    {/* Most Recent Conference Section */}
+                    <div className="bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/events.png')` }}>
+                        <div className="flex justify-center py-6">
+                            <article className="w-[90%] lg:w-[80%] bg-white border-2 border-red-800 rounded-lg shadow-md">
+                                <h1 className="text-center p-4 bg-red-800 text-white text-sm md:text-xl font-regular drop-shadow-md rounded-t-lg border-b-2 border-gray-400">
+                                    Most Recent Conference
+                                </h1>
+
+                                {/* Placeholder and YouTube Video */}
+                                <div className='relative flex justify-center p-4'>
+                                    { !showVideo && (
+                                        <div 
+                                            className="absolute inset-0 flex items-center justify-center bg-white cursor-pointer" 
+                                            onClick={() => setShowVideo(true)}
+                                        >
+                                            <img 
+                                                src="/youtube-play-button.png" 
+                                                alt="YouTube Play Button" 
+                                                className="h-[80px] w-[80px] hover:scale-110 transition-transform duration-300"
+                                            />
+                                        </div>
+                                    )}
+                                    
+                                    {showVideo && (
+                                        <iframe
+                                            width="100%" 
+                                            height="300px"  
+                                            src="https://www.youtube.com/embed/t2HxIdkXPDw?si=-Sc8HLdXgqCbASYO" 
+                                            title="YouTube video player" 
+                                            frameBorder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            referrerPolicy="strict-origin-when-cross-origin" 
+                                            allowFullScreen
+                                        />
+                                    )}
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    {/* About Conference Section */}
+                    <div className="bg-gray-100 p-6 rounded-lg shadow-inner mx-4">
+                        <h3 className="text-xl font-bold text-center mb-4 border-b-2 border-gray-400">
+                            About our Annual Conference
+                        </h3>
+                        <p className="text-center text-gray-700">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a porttitor felis. Ut placerat risus ultrices ipsum tempor consectetur in sed nisi. Vestibulum aliquam, mauris non ornare pretium, purus velit malesuada est, eu commodo dui enim luctus tellus. Nulla eu eleifend enim. In hac habitasse platea dictumst. Donec pellentesque aliquet sollicitudin. Nam diam lectus, lacinia sed tincidunt eget, porttitor ac ante. Mauris semper vehicula ligula.
+                        </p>
+                    </div>
+
+                    {/* Subscribe button */}
+                    <div className='flex justify-center my-4'>
+                        <button className="bg-red-800 text-white font-bold py-2 px-4 rounded-md shadow-md hover:scale-105 transition">
+                            <a href="http://www.youtube.com/@gs-lsampalliance1278" target='_blank' rel='noopener noreferrer'>
+                                Subscribe to our YouTube Channel to see more events!
+                            </a>
+                        </button>
+                    </div>
+
+                </section>
+            </div>
         </>
     );
 }
