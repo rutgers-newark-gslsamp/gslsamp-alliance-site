@@ -1,4 +1,9 @@
+// components
 import Title from "../../src/components/Title";
+import Image from "next/image";
+
+// images
+import downloadIcon from "../../public/icons/download_icon.png";
 
 export default function Eligibility() {
   return (
@@ -24,10 +29,12 @@ export default function Eligibility() {
               </div>
             </article>
 
-            <h2 className="text-center underline font-bold text-burgundy">Eligible Majors</h2>
-            <div className="w-[90%] h-[40vh] m-2 border-2 border-burgundy rounded-lg drop-shadow-md">
-              <iframe className="w-full h-full" src="https://drive.google.com/file/d/1C9923MSHlXUsvkS08pFduFjVi_FKw29V/preview" allow="autoplay"></iframe>
-            </div>
+            <a href="/eligibility.pdf" download="gslsamp_eligible_majors.pdf">
+              <button className="border-2 rounded-lg text-white bg-burgundy p-2 m-2 underline w-[12rem]">
+                List of eligible majors <Image src={downloadIcon} alt="download icon" className="w-[1rem] ml-3"></Image>
+              </button>
+            </a>
+
           </div>
         </div>
 
