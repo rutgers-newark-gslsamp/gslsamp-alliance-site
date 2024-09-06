@@ -29,7 +29,7 @@ export default function Eligibility() {
               </div>
             </article>
 
-            <a href="/eligibility.pdf" download="gslsamp_eligible_majors.pdf">
+            <a href="/eligibility.pdf" download="gslsamp_eligible_majors.pdf" target="_blank">
               <button className="border-2 rounded-lg text-white bg-burgundy p-2 m-2 underline w-[12rem]">
                 List of eligible majors <Image src={downloadIcon} alt="download icon" className="w-[1rem] ml-3"></Image>
               </button>
