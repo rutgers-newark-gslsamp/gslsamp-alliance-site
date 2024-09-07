@@ -21,32 +21,29 @@ const NavBar: React.FC<{}> = () => {
     return (
         <>
             {/* desktop nav bar*/}
-            <nav className='flex flex-col w-full bg-burgundy sticky z-30 top-0'>
-                <div className='flex flex-wrap items-center justify-between sm:h-auto w-full' id='top-nav-container'>
+            <nav className='flex flex-col w-full bg-gradient-to-t from-rutgers_red to-dark_rutgers_red sticky z-30 top-0 h-[5rem] drop-shadow-lg'>
+                <div className='flex flex-wrap items-center justify-between sm:h-auto w-full h-full' id='top-nav-container'>
                     <header id="nav_header" className='flex w-full items-center justify-between'>
                         <div className='flex my-1 p-2 gap-2' id='nav-logo-wrapper'>
                             <Image
-                                className='flex h-auto py-3 px-2 drop-shadow'
+                                className='flex h-auto py-3 px-2 shadow-lg'
                                 src={nsfLogo}
                                 alt="NSF Logo"
                                 width={55}
                                 height={55}
                             />
                             <Image
-                                className='flex h-auto py-3 px-2 drop-shadow'
+                                className='flex h-auto py-3 px-2 shadow-xl'
                                 src={gslsampLogo}
                                 alt="GSLSAMP Logo"
                                 width={55}
                                 height={55}
                             />
-                            <h1 className='flex py-3 ml-4 text-xs text-white sm:text-base md:text-lg font-semibold sm:font-medium'>
+                            <h1 className='flex py-3 ml-4 text-xs text-white sm:text-base md:text-xl font-semibold sm:font-medium'>
                                 Garden State-Louis Stokes Alliance <br className='sm:hidden'/> for Minority Participation
                             </h1>
                         </div>
 
-                        
-                        
-                        
                         <a onClick={hideDiv} id="hamburger" className='flex mx-2 w-10 hover:cursor-pointer'>
                             <Image
                                 className='w-auto px-2 drop-shadow grayscale'
@@ -55,38 +52,17 @@ const NavBar: React.FC<{}> = () => {
                                 width={50}
                                 height={50}
                             />
-                        </a>
-                        
-                        
+                        </a>                    
                     </header>
 
-                    {/* should disappear on small screens */}
-                    <div id="navigation-pc" className='h-full'>
-                        <div className='h-full flex justify-center items-center text-center z-30'>
-                            <ul className='h-full flex text-base justify-center place-items-center flex-wrap my-1 mx-5 list-none no-underline nav-page-list'>
-                                <div className='nav_cell'>
-                                    <li>
-                                        <Link className='nav_link text-white' href="/">Home</Link>
-                                    </li>
-                                </div>
-                                <div className='nav_cell'>
-                                    <li>
-                                        <Link className='nav_link text-white' href="/eligibility">Eligibility & Benefits</Link>
-                                    </li>
-                                </div>
-                                <div className='nav_cell'>
-                                    <li>
-                                        <Link className='nav_link text-white' href="/events">Events</Link>
-                                    </li>
-                                </div>
-                                <div className='nav_cell'>
-                                    <li>
-                                        <Link className='nav_link text-white' href="/faq">FAQ & Resources</Link>
-                                    </li>
-                                </div>
-                            </ul>
-                        </div>
-                        
+                    {/* PAGES - should disappear on small screens */}
+                    <div id="navigation-pc" className='h-full w-[40rem]'>
+                        <div className='z-30 h-full flex w-full justify-between px-2 items-center'>
+                            <Link className='nav_link text-white flex items-center' href="/"> Home </Link>
+                            <Link className='nav_link text-white' href="/eligibility"> Eligibility & Benefits </Link>
+                            <Link className='nav_link text-white' href="/events"> Events </Link>
+                            <Link className='nav_link text-white' href="/faq"> FAQ & Resources </Link>
+                        </div>  
                     </div>
 
                 </div>             

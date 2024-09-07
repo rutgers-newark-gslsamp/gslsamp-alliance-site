@@ -21,6 +21,8 @@ module.exports = {
         'off_white': '#ECECED',
         'dark_off_white': '#D9D9D9',
         'light_burgundy': '#D9C7C7',
+        'rutgers_red': '#D32F2F',
+        'dark_rutgers_red': '#A82424',
       },
     },
   },
