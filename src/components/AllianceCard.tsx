@@ -12,7 +12,7 @@ interface AllianceCardProps {
 
 const AllianceCard: React.FC<AllianceCardProps> = ({ logo, universityName, universityURL, contactName, contactEmail, contactPhone }) => {
     return (
-        <div className="bg-white flex flex-col items-center justify-between align-middle p-1 m-1 max-h-56 max-w-56 shadow rounded-lg hover:bg-gray-300 hover:transition duration-500">
+        <div className="alliance_card bg-white flex flex-col items-center justify-between align-middle p-1 m-1 max-h-56 max-w-56 shadow rounded-lg hover:bg-gray-300 hover:transition duration-500">
             {universityURL ? 
                 <a href={universityURL} target="_blank" className="hover:cursor-pointer hover:underline hover:shadow-gray-2 00 hover:shadow rounded-lg">
                     <Image

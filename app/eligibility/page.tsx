@@ -9,7 +9,7 @@ import backdrop from "../../public/generic_backdrop.jpg";
 export default function Eligibility() {
   return (
     <>
-      <Title name={"Eligibility for Admission"}/>
+      <Title name={"Eligibility for Membership"}/>
 
       {/* Content specific to Eligibility & Benefits page */}
       <main className="flex justify-center items-center flex-col align-middle w-auto pt-[1rem]">

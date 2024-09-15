@@ -11,9 +11,9 @@ import runbLogo from "../../public/alliance-logos/runb_logo_24.png"
 // COMPONENTS
 import AllianceCard from "./AllianceCard";
 
-const AllianceGrid: React.FC = () => {
+const AllianceScroll: React.FC = () => {
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-2 mx-6 lg:mx-12 gap-4">
+        <div className="horizontal_scroll">
             <AllianceCard
                 logo={runLogo}
                 universityName='Rutgers University-Newark' 
@@ -82,4 +82,4 @@ const AllianceGrid: React.FC = () => {
     );
 };
 
-export default AllianceGrid;
+export default AllianceScroll;
