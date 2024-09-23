@@ -31,7 +31,7 @@ export default function Home() {
 
         {/* About us */}
         <div className="w-full md:w-[70%] flex justify-center items-center flex-col">
-          <h1 className="text-center m-4 text-3xl md:text-4xl font-bold">About the Garden State LSAMP</h1>
+          <h1 className="text-center m-4 pt-6 md:pt-2 text-3xl md:text-4xl font-bold">About the Garden State LSAMP</h1>
           <p className="text-[1.2rem] md:text-[1.75rem] p-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a porttitor felis. Ut placerat risus ultrices ipsum tempor consectetur in sed nisi. Vestibulum aliquam, mauris non ornare pretium, purus velit malesuada est, eu commodo dui enim luctus tellus. Nulla eu eleifend enim. In hac habitasse platea dictumst. Donec pellentesque aliquet sollicitudin. Nam diam lectus, lacinia sed tincidunt eget, porttitor ac ante. Mauris semper vehicula ligula, ut blandit dui aliquet et. Vivamus eget mollis libero, eu interdum elit. Nunc auctor consectetur turpis, eu hendrerit felis bibendum vel.</p>
         </div>
 

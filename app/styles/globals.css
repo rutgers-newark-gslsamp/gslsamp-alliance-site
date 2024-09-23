@@ -512,7 +512,6 @@ a.inline-link{
   margin: 10px;
   float: left;
   box-sizing: border-box;
-
 }
 
 .sr-row::after {
@@ -619,4 +618,12 @@ a.inline-link{
   font-size: 22px;
   vertical-align: middle;
   margin-right: 5px; /* Adjust the spacing between the bullet point and the text */
+}
+
+/* Events */
+
+.systemicBg {
+  background-image: url('../../public/nj_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

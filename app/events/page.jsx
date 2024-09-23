@@ -1,21 +1,31 @@
 'use client';
 
-import { useState } from 'react';
-
 // Components
 import Image from 'next/image';
 import Title from '../../src/components/Title';
+import Carousel from '../../src/components/Carousel';
 
 // Images
 import backdrop from '../../public/nj_background.png';
+import youtubeIcon from '../../public/youtube_icon.png';
+
+
+// placeholder images
+import systemicImage1 from "../../public/event-photos/sample_event_1.png";
+import systemicImage2 from "../../public/event-photos/sample_event_2.png";
+import systemicImage3 from "../../public/event-photos/sample_event_3.png";
 
 export default function Events() {
-    const [showVideo, setShowVideo] = useState(false);
 
-    return (
+    // sample carousel images for systemic
+    const systemicImages = [systemicImage1, systemicImage2, systemicImage3];
+
+    return (    
         <>
 
             <Title name="GS-LSAMP Events"></Title>
+
+            {/* Conference Layer */}
             <div className="flex justify-center flex-col"> 
 
                    <Image src={backdrop} alt="background" className='relative w-full object-cover h-[25rem] sm:h-[36rem]'></Image>
@@ -41,24 +51,46 @@ export default function Events() {
                     </div>
 
                     {/* About Conference Section */}
-                    <div className="bg-gray-100 p-6 rounded-lg shadow-inner mx-4">
-                        <h3 className="text-xl font-bold text-center mb-4 border-b-2 ">
+                    <div className="p-6 mx-4 flex flex-col items-center">
+                        <h3 className="text-3xl font-bold text-center mb-4 border-b-4 md:w-[50rem] border-b-dark_off_white">
                             About our Annual Conference
                         </h3>
-                        <p className="text-center text-gray-700">
+                        <p className="text-center text-gray-700 shadow m-4 p-4 md:w-[50rem] bg-dark_off_white ">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a porttitor felis. Ut placerat risus ultrices ipsum tempor consectetur in sed nisi. Vestibulum aliquam, mauris non ornare pretium, purus velit malesuada est, eu commodo dui enim luctus tellus. Nulla eu eleifend enim. In hac habitasse platea dictumst. Donec pellentesque aliquet sollicitudin. Nam diam lectus, lacinia sed tincidunt eget, porttitor ac ante. Mauris semper vehicula ligula.
                         </p>
                     </div>
 
                     {/* Subscribe button */}
-                    <div className='flex justify-center my-4'>
-                        <button className="bg-gradient-to-t from-rutgers_red to-dark_rutgers_red border-dark_rutgers_red text-white font-bold py-2 px-4 rounded-md shadow-md hover:scale-105 transition">
-                            <a href="http://www.youtube.com/@gs-lsampalliance1278" target='_blank' rel='noopener noreferrer'>
-                                Subscribe to our YouTube Channel to see more events!
+                    <div className='flex justify-center mb-8'>
+                        <button className="shadow bg-gradient-to-t from-rutgers_red to-dark_rutgers_red border-dark_rutgers_red text-white font-bold py-2 px-4 rounded-md shadow-md hover:scale-105 transition">
+                            <a href="http://www.youtube.com/@gs-lsampalliance1278" target='_blank' rel='noopener noreferrer' className='flex'>
+                                <Image src={youtubeIcon} alt="Youtube Icon" className='w-[1.9rem] pr-2'/>
+                                Subscribe 
                             </a>
                         </button>
                     </div>
             </div>
+
+            {/* SySTEMic Layer */}
+            <div className="flex justify-center flex-col">
+            
+                {/* SySTEMic images */}
+                <div className='h-[25rem] systemicBg flex justify-center items-center'>
+                    <Carousel images={systemicImages} />
+                </div>
+                
+
+                {/* About SySTEMic Section */}
+                <div className="p-6 mx-4 flex flex-col items-center">
+                    <h3 className="text-3xl font-bold text-center mb-4 md:w-[50rem] border-b-4 border-b-dark_off_white">
+                        About SySTEMic
+                    </h3>
+                    <p className="text-center text-gray-700 shadow m-4 md:w-[50rem] p-4 bg-dark_off_white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a porttitor felis. Ut placerat risus ultrices ipsum tempor consectetur in sed nisi. Vestibulum aliquam, mauris non ornare pretium, purus velit malesuada est, eu commodo dui enim luctus tellus. Nulla eu eleifend enim. In hac habitasse platea dictumst. Donec pellentesque aliquet sollicitudin. Nam diam lectus, lacinia sed tincidunt eget, porttitor ac ante. Mauris semper vehicula ligula.
+                    </p>
+                </div>
+            </div>
+
         </>
     );
 }
