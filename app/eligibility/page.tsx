@@ -33,11 +33,16 @@ export default function Eligibility() {
             </article>
 
             {/* Download Eligible Majors - new tab or just normal download */}
-            <Link href="/eligibility/majors" target="_blank">
+            {/* <Link href="/eligibility/majors" target="_blank">
               <button className="border-2 rounded-lg text-white bg-gradient-to-t from-rutgers_red to-dark_rutgers_red p-2 m-2 underline w-[12rem]">
                 List of eligible majors <Image src={downloadIcon} alt="download icon" className="w-[1rem] ml-3 shadow-md"></Image>
               </button>
-            </Link>
+            </Link> */}
+            <a href="/eligibility.pdf" target="_blank">
+              <button className="border-2 rounded-lg text-white bg-gradient-to-t from-rutgers_red to-dark_rutgers_red p-2 m-2 underline w-[12rem]">
+                List of eligible majors <Image src={downloadIcon} alt="download icon" className="w-[1rem] ml-3 shadow-md"></Image>
+              </button>
+            </a>
 
           </div>
         </div>
