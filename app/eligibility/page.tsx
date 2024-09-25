@@ -1,6 +1,7 @@
 // components
 import Title from "../../src/components/Title";
 import Image from "next/image";
+import Link from "next/link";
 
 // images
 import downloadIcon from "../../public/icons/download_icon.png";
@@ -31,11 +32,12 @@ export default function Eligibility() {
               </div>
             </article>
 
-            <a href="/eligibility.pdf" download="gslsamp_eligible_majors.pdf" target="_blank">
+            {/* Download Eligible Majors - new tab or just normal download */}
+            <Link href="/eligibility/majors" target="_blank">
               <button className="border-2 rounded-lg text-white bg-gradient-to-t from-rutgers_red to-dark_rutgers_red p-2 m-2 underline w-[12rem]">
                 List of eligible majors <Image src={downloadIcon} alt="download icon" className="w-[1rem] ml-3 shadow-md"></Image>
               </button>
-            </a>
+            </Link>
 
           </div>
         </div>

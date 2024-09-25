@@ -24,9 +24,8 @@ const CarouselVideo = ({ videos }) => {
 
 
   {/* Red Padding BOX */}
-  return (
-    // remove height for option 1 - same 
-    <div className="flex flex-col items-center bg-gradient-to-t from-rutgers_red to-dark_rutgers_red rounded-lg p-6 relative pb-2 md:pb-0 lg:w-[32rem] drop-shadow">
+  return ( 
+    <div className="flex flex-col items-center bg-gradient-to-t from-rutgers_red to-dark_rutgers_red rounded-3xl p-6 relative pb-2 md:pb-0 lg:w-[24rem] drop-shadow">
       
       {/* Indicator dots */}
       <div className="flex space-x-2 absolute top-5 left-1/2 transform -translate-x-1/2 drop-shadow">
