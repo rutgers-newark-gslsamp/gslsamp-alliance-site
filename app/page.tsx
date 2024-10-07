@@ -7,9 +7,10 @@ import SocialMediaCard from "../src/components/SocialMediaCard";
 import Image from "next/image";
 
 // images
-import heroImage1 from "../public/hero/hero_image_1.png";
-import heroImage2 from "../public/hero/hero_image_2.png";
-import heroImage3 from "../public/hero/hero_image_3.png";
+import heroImage1 from "../public/hero/hero_image_1.jpg";
+import heroImage2 from "../public/hero/hero_image_2.jpg";
+import heroImage3 from "../public/hero/hero_image_3.jpg";
+import heroImage4 from "../public/hero/hero_image_4.jpg";
 import liBanner from "../public/icons/linkedin_bg.jpg";
 import liPfp from "../public/icons/linkedin_pfp.jpg";
 import linkedInIcon from "../public/icons/linkedin_logo.png";
@@ -17,7 +18,7 @@ import linkedInIcon from "../public/icons/linkedin_logo.png";
 export default function Home() {
 
   // hero carousel images array
-  const heroImages = [heroImage1, heroImage2, heroImage3];
+  const heroImages = [heroImage1, heroImage2, heroImage3, heroImage4];
 
   // testimonial videos array
   const testimonialVideos = [
@@ -32,12 +33,12 @@ export default function Home() {
       <CarouselHero images={heroImages}/>
 
       {/* Page content -- Layer 1*/}
-      <div className="flex flex-col 2xl:flex-row w-full md:w-[80%] mx-auto">
+      <div className="flex flex-col 2xl:flex-row w-full md:w-[80%] mx-auto mt-[2rem]">
 
         {/* About us */}
         <div className="w-full 2xl:w-[70%] flex justify-center items-center flex-col">
-          <h1 className="text-center m-4 pt-6 text-3xl md:text-5xl font-bold">About the Garden State LSAMP</h1>
-          <p className="text-[1.2rem] md:text-[1.3rem] p-4 text-left w-[90%]">The Garden State LSAMP (Louis Stokes Alliance for Minority Participation) is an alliance of eight NJ universities (Fairleigh Dickinson, Kean, Montclair State, NJIT, Rutgers – New Brunswick and Newark, Essex County College, and William Paterson) and one community college (Essex County), aimed at helping students succeed in non-medical Science, Technology, Engineering and Mathematics (STEM) majors. Started in 1991 and funded by the National Science Foundation, LSAMP is a nationwide program designed to increase the number of professionals from minority groups that are traditionally underrepresented in STEM fields (see below for eligibility requirements). The program provides support services at many levels to help interested students be successful in STEM majors, such as academic support and specialized advising. Students are also eligible for mentoring, free tutoring services and paid research opportunities with university faculty. The program now includes over 50 alliances and is considered one of the most successful of its kind.
+          <h1 className="text-left m-4 pt-6 text-3xl md:text-5xl font-bold italic">About the Garden State LSAMP</h1>
+          <p className="text-[1.2rem] md:text-[1.3rem] p-4 text-left w-[90%] leading-loose">&emsp;&emsp;The Garden State LSAMP (Louis Stokes Alliance for Minority Participation) is an alliance of eight NJ universities (Fairleigh Dickinson, Kean, Montclair State, NJIT, Rutgers – New Brunswick and Newark, Essex County College, and William Paterson) and one community college (Essex County), aimed at helping students succeed in non-medical Science, Technology, Engineering and Mathematics (STEM) majors. Started in 1991 and funded by the National Science Foundation, LSAMP is a nationwide program designed to increase the number of professionals from minority groups that are traditionally underrepresented in STEM fields (see below for eligibility requirements). The program provides support services at many levels to help interested students be successful in STEM majors, such as academic support and specialized advising. Students are also eligible for mentoring, free tutoring services and paid research opportunities with university faculty. The program now includes over 50 alliances and is considered one of the most successful of its kind.
 
 
             <br /> <br />STEM fields are exciting and challenging, and lead to rewarding and stable careers! Most of the problems our world faces are being addressed by professionals in STEM areas. Whether it is to address global warming, energy production, food production, finding cures to disease, information technology or space travel, it will require a vast supply of STEM professionals for success. There is a severe shortage of people with this kind of training in the United States. For that reason, the U.S. is falling behind many countries in our ability to compete, which will have dire consequences for our country in the long run.

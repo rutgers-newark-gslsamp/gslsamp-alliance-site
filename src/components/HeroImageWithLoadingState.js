@@ -34,14 +34,18 @@ export default function HeroImageWithLoadingState({ src, alt }) {
         <div className='flex justify-center'>
             {isLoading && <p>Loading...</p>}
             {/* Use the Next.js Image component alias */}
-            <div className='flex justify-center items-center'>{/*md:border-red-700 md:border-x-8 md:border-b-4*/}
+            <div className='justify-center relative overflow-hidden'>
                 <Image 
                     ref={imgRef}
                     src={src} 
                     alt={alt}
                     style={{ display: isLoading ? 'none' : 'block' }}
                     onError={handleError}
+                    className='w-full object-cover'
+                    width={1500}
+                    height={500}
                 />
+                <div className='absolute inset-0 xl:bg-gradient-to-r bg-gradient-to-b from-white'/>
             </div>
         </div>
     );

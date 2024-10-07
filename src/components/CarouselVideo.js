@@ -40,7 +40,7 @@ const CarouselVideo = ({ videos }) => {
         ))}
       </div>
 
-      <div className="z-20 flex flex-col items-center mt-6 mb-4 drop-shadow-lg"> {/* Increased top margin */}
+      <div className="z-20 flex flex-col items-center mt-6 mb-4 drop-shadow-lg border"> {/* Increased top margin */}
         <VideoWithLoadingState url={videos[currentVideoIndex]} />
       </div>
 

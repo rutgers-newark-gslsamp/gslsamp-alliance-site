@@ -24,7 +24,6 @@ const VideoWithLoadingState = ({ url }) => {
         onReady={handleReady}
         onError={handleError}
         style={{ display: isLoading ? 'none' : 'block' }}
-        
         height={330}
         width={330}
       />

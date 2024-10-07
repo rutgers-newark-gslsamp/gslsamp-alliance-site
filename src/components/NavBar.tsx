@@ -56,7 +56,7 @@ const NavBar: React.FC<{}> = () => {
                     </header>
 
                     {/* PAGES - should disappear on small screens */}
-                    <div id="navigation-pc" className='h-full w-[40rem]'>
+                    <div id="navigation-pc" className='h-full w-[40%]'>
                         <div className='z-30 h-full flex w-full justify-between px-2 items-center'>
                             <Link className='nav_link text-white flex items-center' href="/"> Home </Link>
                             <Link className='nav_link text-white' href="/eligibility"> Eligibility & Benefits </Link>
