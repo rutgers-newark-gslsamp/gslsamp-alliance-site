@@ -84,10 +84,7 @@ body {
   width: auto;
   padding: 12px 10px;
 }
-.nav-logo-wrapper {
-  display: flex;
-  margin: 0px 5px 0px 15px;
-}
+
 .nav-logo-mobile, .nav-logo {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.48));
 }

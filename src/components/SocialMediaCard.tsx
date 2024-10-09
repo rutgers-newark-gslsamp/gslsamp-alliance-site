@@ -16,10 +16,10 @@ const SocialMediaCard: React.FC<SocialMediaCardProps> = ({ picture, profileName,
                 {/* Banner */}
                 <div className="sc_banner rounded-t-3xl">
                     <Image src={banner} alt="Social Media Banner" className="rounded-t-3xl relative drop-shadow"/>
-                    <Image src={picture} alt="Social Media Profile Pic" className="absolute w-[5rem] rounded-full left-4 top-12 border shadow-md"/>
+                    <Image src={picture} alt="Social Media Profile Pic" className="relative w-[5rem] rounded-full left-4 bottom-12 border shadow-md"/>
                 </div>
 
-                <div className="pt-3">
+                <div className="relative bottom-16">
                     <h1 className="text-xl font-semibold pl-10">{profileName}</h1>
                     <div className="flex flex-col">
                         {children}

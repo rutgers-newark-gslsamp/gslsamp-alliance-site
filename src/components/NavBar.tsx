@@ -21,32 +21,32 @@ const NavBar: React.FC<{}> = () => {
     return (
         <>
             {/* desktop nav bar*/}
-            <nav className='flex flex-col w-full bg-gradient-to-t from-rutgers_red to-dark_rutgers_red sticky z-30 top-0 h-[5rem] drop-shadow-lg'>
+            <nav className='flex flex-col w-full bg-gradient-to-t from-rutgers_red to-dark_rutgers_red sticky z-30 top-0 drop-shadow-lg'>
                 <div className='flex flex-wrap items-center justify-between sm:h-auto w-full h-full' id='top-nav-container'>
                     <header id="nav_header" className='flex w-full items-center justify-between'>
                         <div className='flex my-1 p-2 gap-2' id='nav-logo-wrapper'>
                             <Image
-                                className='flex h-auto py-3 px-2 shadow-lg'
+                                className='flex h-auto w-auto py-3 px-2 shadow-xl'
                                 src={nsfLogo}
                                 alt="NSF Logo"
                                 width={55}
                                 height={55}
                             />
                             <Image
-                                className='flex h-auto py-3 px-2 shadow-xl'
+                                className='flex h-auto w-auto py-3 px-2 shadow-xl'
                                 src={gslsampLogo}
                                 alt="GSLSAMP Logo"
                                 width={55}
                                 height={55}
                             />
                             <h1 className='flex py-3 ml-4 text-xs text-white sm:text-base md:text-xl font-semibold sm:font-medium'>
-                                Garden State-Louis Stokes Alliance <br className='sm:hidden'/> for Minority Participation
+                                Garden State-Louis Stokes Alliance for Minority Participation
                             </h1>
                         </div>
 
                         <a onClick={hideDiv} id="hamburger" className='flex mx-2 w-10 hover:cursor-pointer'>
                             <Image
-                                className='w-auto px-2 drop-shadow grayscale'
+                                className='w-auto px-2 py-3 drop-shadow grayscale'
                                 src={menuIcon}
                                 alt="Hamburger Menu Icon"
                                 width={50}
