@@ -65,28 +65,30 @@ const NavBar: React.FC<{}> = () => {
                         </div>  
                     </div>
 
-                </div>             
+                </div>       
+
+                {/* mobile nav bar*/}
+                {isVisible && (
+                    <div className=' w-full bg-white z-50'>
+                        <ul className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap my-1 mx-auto list-none no-underline nav-page-list italic' id="bottom-nav-page-list">
+                            <li className='w-screen h-full flex justify-center items-center border-b'>
+                                <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center' href="/">Home</Link>
+                            </li>
+                            <li className='w-full h-full flex justify-center items-center border-b'>
+                                <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/eligibility">Eligibility & Benefits</Link>
+                            </li>
+                            <li className='w-full h-full flex justify-center items-center border-b'>
+                                <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/events">Events</Link>
+                            </li>
+                            <li className='w-full h-full flex justify-center items-center border-b'>
+                                <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/faq">FAQs & Resources</Link>
+                            </li>
+                        </ul>
+                    </div>
+                )}      
             </nav>
             
-            {/* mobile nav bar*/}
-            {isVisible && (
-                <div className='w-full bg-white'>
-                    <ul className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap my-1 mx-auto list-none no-underline nav-page-list italic' id="bottom-nav-page-list">
-                        <li className='w-screen h-full flex justify-center items-center border-b'>
-                            <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center' href="/">Home</Link>
-                        </li>
-                        <li className='w-full h-full flex justify-center items-center border-b'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/eligibility">Eligibility & Benefits</Link>
-                        </li>
-                        <li className='w-full h-full flex justify-center items-center border-b'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/events">Events</Link>
-                        </li>
-                        <li className='w-full h-full flex justify-center items-center border-b'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/faq">FAQs & Resources</Link>
-                        </li>
-                    </ul>
-                </div>
-            )}
+            
         </>
     );
 };
