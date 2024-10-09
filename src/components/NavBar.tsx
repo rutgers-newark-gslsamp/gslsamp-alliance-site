@@ -24,22 +24,22 @@ const NavBar: React.FC<{}> = () => {
             <nav className='flex flex-col w-full bg-gradient-to-t from-rutgers_red to-dark_rutgers_red sticky z-30 top-0 drop-shadow-lg'>
                 <div className='flex flex-wrap items-center justify-between sm:h-auto w-full h-full' id='top-nav-container'>
                     <header id="nav_header" className='flex w-full items-center justify-between'>
-                        <div className='flex my-1 p-2 gap-2' id='nav-logo-wrapper'>
+                        <div className='flex my-2 gap-2 pl-2' id='nav-logo-wrapper'>
                             <Image
-                                className='flex h-auto w-auto py-3 px-2 shadow-xl'
+                                className='flex h-auto w-auto object-cover'
                                 src={nsfLogo}
                                 alt="NSF Logo"
-                                width={55}
-                                height={55}
+                                width={60}
+                                height={60}
                             />
                             <Image
-                                className='flex h-auto w-auto py-3 px-2 shadow-xl'
+                                className='flex h-auto w-auto object-cover rounded-sm'
                                 src={gslsampLogo}
                                 alt="GSLSAMP Logo"
-                                width={55}
-                                height={55}
+                                width={60}
+                                height={60}
                             />
-                            <h1 className='flex py-3 ml-4 text-xs text-white sm:text-base md:text-xl font-semibold sm:font-medium'>
+                            <h1 className='flex items-center text-white text-base md:text-xl sm:font-medium w-[60%] sm:w-full pl-2'>
                                 Garden State-Louis Stokes Alliance for Minority Participation
                             </h1>
                         </div>
@@ -70,20 +70,19 @@ const NavBar: React.FC<{}> = () => {
             
             {/* mobile nav bar*/}
             {isVisible && (
-                <div id='mobile-nav' className='fixed left-0 top-4 w-full bg-gray-100 z-50 mt-16 h-[92vh]'>
-                    <ul className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap text-white font-bold my-1 mx-5 list-none no-underline nav-page-list' id="bottom-nav-page-list">
-                        {/* FIXME: GLOBAL CSS FOR HOVER EFFECT IS NOT WORKING */}
-                        <li className='w-screen h-full flex justify-center items-center border-b border-[#D4D4D4]'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase ' href="/">Home</Link>
+                <div className='w-full bg-white'>
+                    <ul className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap my-1 mx-auto list-none no-underline nav-page-list italic' id="bottom-nav-page-list">
+                        <li className='w-screen h-full flex justify-center items-center border-b'>
+                            <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center' href="/">Home</Link>
                         </li>
-                        <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/eligibility">Eligibility & Benefits</Link>
+                        <li className='w-full h-full flex justify-center items-center border-b'>
+                            <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/eligibility">Eligibility & Benefits</Link>
                         </li>
-                        <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/events">Events</Link>
+                        <li className='w-full h-full flex justify-center items-center border-b'>
+                            <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/events">Events</Link>
                         </li>
-                        <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4] '>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/faq">FAQs & Resources</Link>
+                        <li className='w-full h-full flex justify-center items-center border-b'>
+                            <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/faq">FAQs & Resources</Link>
                         </li>
                     </ul>
                 </div>
