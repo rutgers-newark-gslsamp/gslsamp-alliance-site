@@ -27,7 +27,7 @@ export default function Faq() {
       <h1 className="text-center text-xl mx-4"> Click on the buttons below to download some of our resources.</h1>
 
       <div className="flex justify-center">
-        <div className="m-5 grid sm:grid-cols-2 w-[50rem] justify-items-center">
+        <div className="m-5 grid md:grid-cols-2 justify-items-center">
 
           <a href="/phd-2020.pdf" target="_blank" className="resource bg-gradient-to-t from-rutgers_red to-dark_rutgers_red border-dark_rutgers_red shadow-md">
               <p className="my-1 drop-shadow text-lg">PhD program Applicant Checklist</p>
@@ -62,8 +62,6 @@ export default function Faq() {
       <h1 className="text-center text-xl mx-4"> Still have a question? Reach out to our staff for further inquiries.</h1>
 
       <section className=" self-center mb-8">
-            
-
             <div id="staff-card-container" className="grid md:grid-cols-2 lg:grid-cols-3 justify-items-center">
                 <StaffCard 
                     picture={gates}
