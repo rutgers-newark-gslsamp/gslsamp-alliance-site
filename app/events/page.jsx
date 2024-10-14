@@ -27,7 +27,7 @@ export default function Events() {
             {/* Conference Layer */}
             <div className=" flex justify-center flex-col"> 
 
-                   <div className='eventBg h-[34rem] flex flex-col items-center justify-center'>
+                   <div className='eventBg h-[24rem] sm:h-[34rem] flex flex-col items-center justify-center'>
 
                         {/* Most Recent Conference Section */}
                         <div className='w-full flex justify-center'>
