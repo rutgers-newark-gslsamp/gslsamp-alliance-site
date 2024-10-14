@@ -65,6 +65,7 @@ const NavBar: React.FC<{}> = () => {
                             <Link className='nav_link text-white' href="/eligibility"> Eligibility & Benefits </Link>
                             <Link className='nav_link text-white' href="/events"> Events </Link>
                             <Link className='nav_link text-white' href="/faq"> FAQ & Resources </Link>
+                            <Link className='nav_link text-white' href="/contact"> Contact Us </Link>
                         </div>  
                     </div>
 
@@ -85,6 +86,9 @@ const NavBar: React.FC<{}> = () => {
                             </li>
                             <li className='w-full h-full flex justify-center items-center border-b'>
                                 <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/faq">FAQs & Resources</Link>
+                            </li>
+                            <li className='w-full h-full flex justify-center items-center border-b'>
+                                <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/contact">Contact Us</Link>
                             </li>
                         </ul>
                     </div>
