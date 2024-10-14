@@ -56,24 +56,23 @@ export default function Home() {
               
               <p className="text-left text-lg p-4">Check out our LinkedIn to stay up to date with GS-LSAMP news!</p>
 
-              {/* LinkedIn Button */}
-              <a href="https://www.linkedin.com/in/gs-lsamp-alliance/" target="_blank">
-                <button className="ml-auto mr-6 border w-[8rem] h-[2rem] flex rounded-full drop-shadow border-[#0072b1] bg-[#0072b1]">
-                  <div className="bg-white w-[3rem] flex justify-center rounded-l-full">
+              <div className="w-full bg-[#0072b1] rounded-b-3xl h-[3.3rem] py-[0.6rem] ">
+                {/* LinkedIn Button */}
+                <a href="https://www.linkedin.com/in/gs-lsamp-alliance/" target="_blank">
+                  <button className="ml-auto mr-6 border w-[7rem] h-[2rem] flex rounded-full shadow-lg border-white bg-white">
+                    
                     <Image src={linkedInIcon} alt="Linked In Logo" className="w-[2rem] p-1"/>
-                  </div>
-                  
-                  <div className="flex items-end">
-                    <p className="w-[5rem] text-center p-2 text-white font-bold">Connect</p>
-                  </div>
-                  
-                </button>
-              </a>
+                    <p className="text-[#0072b1] font-bold pr-[0.75rem]">Connect</p>
+                    
+                  </button>
+                </a>
+              </div>
+              
             </SocialMediaCard>
           </div>
 
           {/* Testimonials */}
-          <h1 className="text-center p-4 text-3xl font-bold">Hear from our scholars!</h1>
+          <h1 className="text-center p-4 text-2xl font-bold">Hear from our scholars!</h1>
           <CarouselVideo videos={testimonialVideos} />
         </div>
 
