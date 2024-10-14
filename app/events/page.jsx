@@ -30,7 +30,7 @@ export default function Events() {
                    <div className='eventBg h-[24rem] sm:h-[34rem] flex flex-col items-center justify-center'>
 
                         {/* Most Recent Conference Section */}
-                        <div className='w-full flex justify-center'>
+                        <div className='w-full flex justify-center m-4'>
                             <article className="shadow-xl w-[25rem] sm:w-[45rem] bg-gradient-to-t from-rutgers_red to-dark_rutgers_red border-dark_rutgers_red border-2 border-red-800 rounded-xl shadow-md">
                                 <h1 className="text-center p-4 bg-gradient-to-t from-rutgers_red to-dark_rutgers_red border-dark_rutgers_red text-white text-xl font-bold drop-shadow-md rounded-t-xl">
                                     Most Recent Conference
