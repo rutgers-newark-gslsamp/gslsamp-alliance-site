@@ -31,10 +31,10 @@ const CarouselHero = ({ images }) => {
   return (
     <div className="relative flex flex-col xl:flex-row justify-center border-gray-300 drop-shadow-xl bg-white"> 
       
-      <div className='bg-white xl:w-[50%] mx-auto pt-2 xl:pl-[10rem] my-auto flex flex-col '>
-        <h1 className='italic text-gray-500 text-5xl'>The Garden State</h1>
-        <h1 className='italic text-dark_rutgers_red text-9xl'>LSAMP</h1>
-        <h1 className='text-gray-400 text-xl'>Louis Stokes Alliance for Minority Participation</h1>
+      <div className='bg-white xl:w-[50%] mx-auto pt-2 xl:pl-[10rem] my-auto flex flex-col'>
+        <h1 className='italic text-gray-500 text-4xl'>The Garden State</h1>
+        <h1 className='italic text-dark_rutgers_red text-8xl'>LSAMP</h1>
+        <h1 className='text-gray-400 text-lg'>Louis Stokes Alliance for Minority Participation</h1>
       </div>
 
       {/* Images fade on right */}
