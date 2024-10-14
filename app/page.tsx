@@ -37,7 +37,13 @@ export default function Home() {
 
         {/* About us */}
         <div className="w-full 2xl:w-[70%] flex justify-center items-center flex-col">
-          <h1 className="m-4 pt-6 text-2xl md:text-5xl font-bold italic">About the Garden State LSAMP</h1>
+
+          {/* Header */}
+          <div className="flex m-4 pt-6 text-3xl md:text-5xl font-bold italic underline underline-offset-8 decoration-1 decoration-dark_rutgers_red">
+            <h1 className="">About the</h1>
+            <h1 className="text-dark_rutgers_red">&nbsp;GS-LSAMP</h1>
+          </div>
+          
           <p className="text-[1.2rem] md:text-[1.3rem] p-4 text-left w-[90%] leading-loose">&emsp;&emsp;The Garden State LSAMP (Louis Stokes Alliance for Minority Participation) is an alliance of eight NJ universities (Fairleigh Dickinson, Kean, Montclair State, NJIT, Rutgers – New Brunswick and Newark, Essex County College, and William Paterson) and one community college (Essex County), aimed at helping students succeed in non-medical Science, Technology, Engineering and Mathematics (STEM) majors. Started in 1991 and funded by the National Science Foundation, LSAMP is a nationwide program designed to increase the number of professionals from minority groups that are traditionally underrepresented in STEM fields (see below for eligibility requirements). The program provides support services at many levels to help interested students be successful in STEM majors, such as academic support and specialized advising. Students are also eligible for mentoring, free tutoring services and paid research opportunities with university faculty. The program now includes over 50 alliances and is considered one of the most successful of its kind.
 
 
