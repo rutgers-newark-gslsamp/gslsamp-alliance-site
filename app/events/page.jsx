@@ -30,9 +30,9 @@ export default function Events() {
                    <div className='eventBg h-[24rem] sm:h-[34rem] flex flex-col items-center justify-center'>
 
                         {/* Most Recent Conference Section */}
-                        <div className='w-full flex justify-center m-4'>
-                            <article className="shadow-xl w-[25rem] sm:w-[45rem] bg-gradient-to-t from-rutgers_red to-dark_rutgers_red border-dark_rutgers_red border-2 border-red-800 rounded-xl shadow-md">
-                                <h1 className="text-center p-4 bg-gradient-to-t from-rutgers_red to-dark_rutgers_red border-dark_rutgers_red text-white text-xl font-bold drop-shadow-md rounded-t-xl">
+                        <div className='w-full flex justify-center'>
+                            <article className="shadow-xl w-[25rem] sm:w-[45rem] bg-gradient-to-t from-rutgers_red to-dark_rutgers_red border-dark_rutgers_red border-2 border-red-800 sm:rounded-xl shadow-md">
+                                <h1 className="text-center p-4 bg-gradient-to-t from-rutgers_red to-dark_rutgers_red border-dark_rutgers_red text-white text-xl font-bold drop-shadow-md sm:rounded-t-xl">
                                     Most Recent Conference
                                 </h1>
 
@@ -44,7 +44,7 @@ export default function Events() {
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                     referrerPolicy="strict-origin-when-cross-origin" 
                                     allowFullScreen
-                                    className='aspect-video w-full rounded-b-xl'
+                                    className='aspect-video w-full sm:rounded-b-xl'
                                 />
                             </article>
                         </div>
