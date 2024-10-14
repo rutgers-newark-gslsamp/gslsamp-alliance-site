@@ -48,10 +48,9 @@ export default function Eligibility() {
         </div>
 
         {/* Student benefits */}
-        <div className="mx-auto flex m-4 pt-6 text-2xl md:text-4xl font-bold italic underline underline-offset-8 decoration-1 decoration-gray-400">
-          <h1 className="">Member</h1>
-          <h1 className="text-dark_rutgers_red">&nbsp;Benefits</h1>
-        </div>
+        <h3 className="text-3xl font-bold text-center mt-10 mb-4 border-b-4 border-b-dark_off_white">
+          Benefits for Members
+      </h3>
 
         <h3 className="pl-2 pb-[1rem] bg-off_white mx-8 text-xl">
           LSAMP Scholars have outstanding opportunities 

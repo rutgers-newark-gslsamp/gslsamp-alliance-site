@@ -2,53 +2,55 @@
 
 // Components
 import Image from 'next/image';
-import Title from '../../src/components/Title';
+import TitleHeader from '../../src/components/TitleHeader';
 import Carousel from '../../src/components/Carousel';
 
 // Images
-import backdrop from '../../public/nj_background.png';
 import youtubeIcon from '../../public/youtube_icon.png';
 
-
-// placeholder images
-import systemicImage1 from "../../public/event-photos/sample_event_1.png";
-import systemicImage2 from "../../public/event-photos/sample_event_2.png";
-import systemicImage3 from "../../public/event-photos/sample_event_3.png";
+import systemicImage1 from "../../public/event-photos/systemic/sySTEMic 2024 1st place team.png";
+import systemicImage2 from "../../public/event-photos/systemic/sySTEMic 2024 2nd place team.png";
+import systemicImage3 from "../../public/event-photos/systemic/sySTEMic 2024 3rd place team.png";
+import systemicImage4 from "../../public/event-photos/systemic/sySTEMic 2024 topic graphic.png";
+import systemicImage5 from "../../public/event-photos/systemic/sySTEMic 2025 topic graphic.png";
 
 export default function Events() {
 
     // sample carousel images for systemic
-    const systemicImages = [systemicImage1, systemicImage2, systemicImage3];
+    const systemicImages = [systemicImage5, systemicImage4, systemicImage1, systemicImage2, systemicImage3];
 
     return (    
         <>
 
-            <Title name="GS-LSAMP Events"></Title>
+            <TitleHeader first="GS-LSAMP" second="Events"/>
 
             {/* Conference Layer */}
-            <div className="flex justify-center flex-col"> 
+            <div className=" flex justify-center flex-col"> 
 
-                   <Image src={backdrop} alt="background" className='relative w-full object-cover h-[25rem] sm:h-[36rem]'></Image>
+                   <div className='eventBg h-[34rem] flex flex-col items-center justify-center'>
 
-                    {/* Most Recent Conference Section */}
-                    <div className='w-full absolute top-[14rem] flex justify-center'>
-                        <article className="shadow-xl w-[25rem] sm:w-[45rem] bg-gradient-to-t from-rutgers_red to-dark_rutgers_red border-dark_rutgers_red border-2 border-red-800 rounded-xl shadow-md">
-                            <h1 className="text-center p-4 bg-gradient-to-t from-rutgers_red to-dark_rutgers_red border-dark_rutgers_red text-white text-xl font-bold drop-shadow-md rounded-t-xl">
-                                Most Recent Conference
-                            </h1>
+                        {/* Most Recent Conference Section */}
+                        <div className='w-full flex justify-center'>
+                            <article className="shadow-xl w-[25rem] sm:w-[45rem] bg-gradient-to-t from-rutgers_red to-dark_rutgers_red border-dark_rutgers_red border-2 border-red-800 rounded-xl shadow-md">
+                                <h1 className="text-center p-4 bg-gradient-to-t from-rutgers_red to-dark_rutgers_red border-dark_rutgers_red text-white text-xl font-bold drop-shadow-md rounded-t-xl">
+                                    Most Recent Conference
+                                </h1>
 
-                            {/* YouTube Video */}
-                            <iframe
-                                src="https://www.youtube.com/embed/t2HxIdkXPDw?si=-Sc8HLdXgqCbASYO" 
-                                title="YouTube video player" 
-                                frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerPolicy="strict-origin-when-cross-origin" 
-                                allowFullScreen
-                                className='aspect-video w-full rounded-b-xl'
-                            />
-                        </article>
-                    </div>
+                                {/* YouTube Video */}
+                                <iframe
+                                    src="https://www.youtube.com/embed/t2HxIdkXPDw?si=-Sc8HLdXgqCbASYO" 
+                                    title="YouTube video player" 
+                                    frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerPolicy="strict-origin-when-cross-origin" 
+                                    allowFullScreen
+                                    className='aspect-video w-full rounded-b-xl'
+                                />
+                            </article>
+                        </div>
+                   </div>
+
+                    
 
                     {/* About Conference Section */}
                     <div className="p-6 mx-4 flex flex-col items-center">
@@ -75,7 +77,7 @@ export default function Events() {
             <div className="flex justify-center flex-col">
             
                 {/* SySTEMic images */}
-                <div className='h-[25rem] systemicBg flex justify-center items-center'>
+                <div className='h-[25rem] eventBg flex justify-center items-center'>
                     <Carousel images={systemicImages} />
                 </div>
                 

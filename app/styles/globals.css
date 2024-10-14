@@ -629,7 +629,7 @@ a.inline-link{
 
 /* Events */
 
-.systemicBg {
+.eventBg {
   background-image: url('../../public/nj_background.png');
   background-repeat: no-repeat;
   background-size: cover;
