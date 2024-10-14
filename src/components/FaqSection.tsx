@@ -52,7 +52,7 @@ const FAQSection: React.FC = () => {
     ];
 
     return (
-        <div className="p-5 faq_section">
+        <div className="faq_section">
             <div className="bg-white m-1">
                 {faqs.map((faq, index) => (
                     <FAQItem key={index} question={faq.question} answer={faq.answer} />

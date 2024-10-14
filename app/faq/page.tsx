@@ -1,5 +1,6 @@
 // Components
 import Title from "../../src/components/Title";
+import TitleHeader from "../../src/components/TitleHeader";
 import FAQSection from "../../src/components/FaqSection";
 import Image from "next/image";
 
@@ -10,16 +11,16 @@ export default function Faq() {
   return (
     <>
       {/* FAQ */}
-      <Title name={"Frequently Asked Questions"} />
+      <TitleHeader first="Frequently asked" second="Questions" />
       
-      <div className="mt-5 flex flex-col items-center" >
+      <div className="flex flex-col items-center" >
         <FAQSection />
       </div>
 
       {/* Resources */}
       <Title name={"GS-LSAMP Resources"} />
 
-      <h1 className="text-center text-lg"> Click on the buttons below to download some of our resources.</h1>
+      <h1 className="text-center text-xl mx-4"> Click on the buttons below to download some of our resources.</h1>
 
       <div className="flex justify-center">
         <div className="m-5 grid sm:grid-cols-2 w-[50rem] justify-items-center">
