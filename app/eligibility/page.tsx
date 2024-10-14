@@ -10,15 +10,19 @@ import backdrop from "../../public/generic_backdrop.jpg";
 export default function Eligibility() {
   return (
     <>
-      <Title name="Eligibility for Membership"/>
+      <div className="mx-auto flex m-4 pt-6 text-3xl md:text-5xl font-bold italic underline underline-offset-8 decoration-1 decoration-dark_rutgers_red">
+        <h1 className="">Eligbility for</h1>
+        <h1 className="text-dark_rutgers_red">&nbsp;Membership</h1>
+      </div>
 
       {/* Content specific to Eligibility & Benefits page */}
       <main className="flex justify-center items-center flex-col align-middle w-auto pt-[1rem]">
+
         {/* Program requirements */}
         <div className="eligibilityBg h-[20rem] systemicBg flex justify-center items-center w-full">
 
           <div id="eligibility_container" className="w-full flex justify-center">
-            <div className="flex flex-col items-center md:w-[40rem] mt-[1rem] justify-center mb-2 bg-white border-2 border-dark_rutgers_red rounded-lg shadow-md">
+            <div className="flex flex-col items-center w-[22rem] md:w-[40rem] mt-[1rem] justify-center mb-2 bg-white border-2 border-dark_rutgers_red rounded-lg shadow-md">
               <article className="overflow-auto w-full">
                 <h1 className="text-center w-full p-1 bg-gradient-to-t from-rutgers_red to-dark_rutgers_red text-white text-sm md:text-xl font-medium drop-shadow-md rounded-tl-xlg rounded-tr-xlg">
                   To become an LSAMP Scholar, you must...
@@ -32,8 +36,9 @@ export default function Eligibility() {
                 </div>
               </article>
 
+              {/* Button to download PDF of eligible majors */}
               <a href="/eligibility.pdf" target="_blank">
-                <button className="border-2 rounded-lg text-white bg-gradient-to-t from-rutgers_red to-dark_rutgers_red p-2 m-2 underline w-[12rem]">
+                <button className="border-2 rounded-lg text-white bg-gradient-to-t from-rutgers_red to-dark_rutgers_red p-2 m-2 underline w-[14rem]">
                   List of eligible majors <Image src={downloadIcon} alt="download icon" className="w-[1rem] ml-3 shadow-md"></Image>
                 </button>
               </a>
@@ -43,9 +48,12 @@ export default function Eligibility() {
         </div>
 
         {/* Student benefits */}
-        <Title name={"Student Benefits"}/>
+        <div className="mx-auto flex m-4 pt-6 text-2xl md:text-4xl font-bold italic underline underline-offset-8 decoration-1 decoration-gray-400">
+          <h1 className="">Member</h1>
+          <h1 className="text-dark_rutgers_red">&nbsp;Benefits</h1>
+        </div>
 
-        <h3 className="pl-2 bg-off_white mx-8 text-xl">
+        <h3 className="pl-2 pb-[1rem] bg-off_white mx-8 text-xl">
           LSAMP Scholars have outstanding opportunities 
           to help them complete a degree in STEM fields, 
           allowing them to:
