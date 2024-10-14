@@ -24,7 +24,7 @@ const NavBar: React.FC<{}> = () => {
             <nav className='flex flex-col w-full bg-gradient-to-t from-rutgers_red to-dark_rutgers_red sticky z-30 top-0 drop-shadow-lg'>
                 <div className='flex flex-wrap items-center justify-between sm:h-auto w-full h-full' id='top-nav-container'>
                     <header id="nav_header" className='flex w-full items-center justify-between'>
-                        <div className='flex my-2 gap-2 pl-2' id='nav-logo-wrapper'>
+                        <div className='flex my-2 gap-2 pl-2 ' id='nav-logo-wrapper'>
                             <Image
                                 className='flex h-auto w-auto object-cover'
                                 src={nsfLogo}
@@ -44,15 +44,18 @@ const NavBar: React.FC<{}> = () => {
                             </h1>
                         </div>
 
-                        <a onClick={hideDiv} id="hamburger" className='flex mx-2 w-10 hover:cursor-pointer'>
-                            <Image
-                                className='w-auto px-2 py-3 drop-shadow grayscale'
-                                src={menuIcon}
-                                alt="Hamburger Menu Icon"
-                                width={50}
-                                height={50}
-                            />
-                        </a>                    
+                        <div className='w-[20%] md:w-auto flex justify-end'>
+                            <a onClick={hideDiv} id="hamburger" className='mx-2 hover:cursor-pointer'>
+                                <Image
+                                    className='w-auto px-2 py-3 drop-shadow grayscale'
+                                    src={menuIcon}
+                                    alt="Hamburger Menu Icon"
+                                    width={50}
+                                    height={50}
+                                />
+                            </a>  
+                        </div>
+                                          
                     </header>
 
                     {/* PAGES - should disappear on small screens */}
@@ -69,7 +72,7 @@ const NavBar: React.FC<{}> = () => {
 
                 {/* mobile nav bar*/}
                 {isVisible && (
-                    <div className=' w-full bg-white z-50'>
+                    <div className='w-full bg-white z-50'>
                         <ul className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap my-1 mx-auto list-none no-underline nav-page-list italic' id="bottom-nav-page-list">
                             <li className='w-screen h-full flex justify-center items-center border-b'>
                                 <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center' href="/">Home</Link>
