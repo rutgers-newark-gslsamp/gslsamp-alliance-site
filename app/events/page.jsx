@@ -58,7 +58,7 @@ export default function Events() {
                             About our Annual Conference
                         </h3>
                         <p className="text-center text-gray-700 shadow m-4 p-4 md:w-[50rem] bg-dark_off_white ">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a porttitor felis. Ut placerat risus ultrices ipsum tempor consectetur in sed nisi. Vestibulum aliquam, mauris non ornare pretium, purus velit malesuada est, eu commodo dui enim luctus tellus. Nulla eu eleifend enim. In hac habitasse platea dictumst. Donec pellentesque aliquet sollicitudin. Nam diam lectus, lacinia sed tincidunt eget, porttitor ac ante. Mauris semper vehicula ligula.
+                        Every year, GS-LSAMP provides over 250 research opportunities to its students. The annual conference showcases the work these students accomplish through poster presentations. Students get to relate their research and results to an audience of peers and faculty members, as they would at a professional conference. This experience provides them with greater STEM identity, a larger learning community, networking opportunities and is a real confidence boost for most. Those attending students who are not participating get to catch the research bug, with the presenters becoming role models. The conference is attended by nearly 500 people each year. Watch the video of the most recent conference above or click subscribe to view past conference videos.
                         </p>
                     </div>
 
@@ -85,10 +85,10 @@ export default function Events() {
                 {/* About SySTEMic Section */}
                 <div className="p-6 mx-4 flex flex-col items-center">
                     <h3 className="text-3xl font-bold text-center mb-4 md:w-[50rem] border-b-4 border-b-dark_off_white">
-                        About SySTEMic
+                        About sySTEMic
                     </h3>
                     <p className="text-center text-gray-700 shadow m-4 md:w-[50rem] p-4 bg-dark_off_white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a porttitor felis. Ut placerat risus ultrices ipsum tempor consectetur in sed nisi. Vestibulum aliquam, mauris non ornare pretium, purus velit malesuada est, eu commodo dui enim luctus tellus. Nulla eu eleifend enim. In hac habitasse platea dictumst. Donec pellentesque aliquet sollicitudin. Nam diam lectus, lacinia sed tincidunt eget, porttitor ac ante. Mauris semper vehicula ligula.
+                    sySTEMic (show your STEM innovation challenge) is an annual team competition around a given topic. Teams of 4-7 students from GS-LSAMP and the Northern NJ-B2B spend 2-3 months innovating a solution to a real world problem. Past topics have included food insecurity, refugee camps, rising sea level and plastics in the environment. Teams then present their innovations Shark-Tank style in 5-minute pitches followed by Q&A. Judges select the top three teams, who are awarded prizes.
                     </p>
                 </div>
             </div>

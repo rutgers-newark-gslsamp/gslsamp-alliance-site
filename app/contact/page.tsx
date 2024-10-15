@@ -4,7 +4,6 @@ import TitleHeader from"../../src/components/TitleHeader";
 import StaffCard from "../../src/components/StaffCard";
 
 // images
-import rabinovich from "../../public/staff-pictures/rabinovich.jpeg"
 import sanMiguel from "../../public/staff-pictures/Dr_San_Miguel.jpg"
 import gates from "../../public/staff-pictures/Dr_Gates.jpg"
 
@@ -33,14 +32,6 @@ export default function Contact() {
                     university="Rutgers University - Newark"
                     email="csanmig@newark.rutgers.edu"
                     phone="(973) 353-5846"
-                />
-                <StaffCard 
-                    picture={rabinovich}
-                    name="Oren Rabinovich"
-                    role="Director of GS-LSAMP"
-                    university="Rutgers University - Newark"
-                    email="oren.rabinovich@rutgers.edu"
-                    phone="(973) 353-3562"
                 />
             </div>
         </section>
