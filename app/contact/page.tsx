@@ -16,7 +16,7 @@ export default function Contact() {
         <section className="self-center mb-8">
             
 
-            <div id="staff-card-container" className="grid md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+            <div id="staff-card-container" className="grid md:grid-cols-2 justify-items-center">
                 <StaffCard 
                     picture={gates}
                     name="Alexander Gates, Ph.D."

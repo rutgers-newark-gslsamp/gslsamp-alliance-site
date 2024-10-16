@@ -40,7 +40,7 @@ body {
     width: auto;
   }
 
-  #mobile-nav {
+  .mobile_nav {
     display: none;
   }
 }

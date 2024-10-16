@@ -73,7 +73,7 @@ const NavBar: React.FC<{}> = () => {
 
                 {/* mobile nav bar*/}
                 {isVisible && (
-                    <div className='w-full bg-white z-50'>
+                    <div className='w-full bg-white z-50 mobile_nav'>
                         <ul className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap my-1 mx-auto list-none no-underline nav-page-list italic' id="bottom-nav-page-list">
                             <li className='w-screen h-full flex justify-center items-center border-b'>
                                 <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center' href="/">Home</Link>
