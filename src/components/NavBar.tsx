@@ -59,11 +59,12 @@ const NavBar: React.FC<{}> = () => {
                     </header>
 
                     {/* PAGES - should disappear on small screens */}
-                    <div id="navigation-pc" className='h-full w-[40%]'>
+                    <div id="navigation-pc" className='h-full w-[45%]'>
                         <div className='z-30 h-full flex w-full justify-between px-2 items-center'>
                             <Link className='nav_link text-white flex items-center' href="/"> Home </Link>
                             <Link className='nav_link text-white' href="/eligibility"> Eligibility & Benefits </Link>
                             <Link className='nav_link text-white' href="/events"> Events </Link>
+                            <Link className='nav_link text-white' href="/publications"> Publications </Link>
                             <Link className='nav_link text-white' href="/faq"> FAQ & Resources </Link>
                             <Link className='nav_link text-white' href="/contact"> Contact Us </Link>
                         </div>  
@@ -83,6 +84,9 @@ const NavBar: React.FC<{}> = () => {
                             </li>
                             <li className='w-full h-full flex justify-center items-center border-b'>
                                 <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/events">Events</Link>
+                            </li>
+                            <li className='w-full h-full flex justify-center items-center border-b'>
+                                <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/publications">Publications</Link>
                             </li>
                             <li className='w-full h-full flex justify-center items-center border-b'>
                                 <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/faq">FAQs & Resources</Link>
