@@ -3,13 +3,9 @@ import Title from "../../src/components/Title";
 import TitleHeader from "../../src/components/TitleHeader";
 import FAQSection from "../../src/components/FaqSection";
 import Image from "next/image";
-import StaffCard from "../../src/components/StaffCard";
 
 // Images
 import downloadIcon from "../../public/icons/download_icon.png";
-import rabinovich from "../../public/staff-pictures/rabinovich.jpeg"
-import sanMiguel from "../../public/staff-pictures/Dr_San_Miguel.jpg"
-import gates from "../../public/staff-pictures/Dr_Gates.jpg"
 
 export default function Faq() {
   return (

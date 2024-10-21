@@ -1,11 +1,8 @@
 // components
-import Title from "../../src/components/Title";
 import Image from "next/image";
-import Link from "next/link";
 
 // images
 import downloadIcon from "../../public/icons/download_icon.png";
-import backdrop from "../../public/generic_backdrop.jpg";
 
 export default function Eligibility() {
   return (

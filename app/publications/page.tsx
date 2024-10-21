@@ -1,5 +1,4 @@
 // components
-import Title from "../../src/components/Title";
 import TitleHeader from"../../src/components/TitleHeader";
 import PublicationCard from "../../src/components/PublicationCard";
 
