@@ -6,7 +6,7 @@ import PublicationCard from "../../src/components/PublicationCard";
 export default function Publications() {
   return (
     <>
-        <TitleHeader first="Publications on the" second="GS-LSAMP" />
+        <TitleHeader first="Publications on" second="GS-LSAMP" />
 
         {/* 2023 */}
         <div className="mx-auto">

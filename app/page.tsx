@@ -2,7 +2,6 @@
 import AllianceGrid from "../src/components/AllianceGrid";
 import CarouselHero from "../src/components/CarouselHero";
 import CarouselVideo from "../src/components/CarouselVideo";
-import AllianceScroll from "../src/components/AllianceScroll";
 import SocialMediaCard from "../src/components/SocialMediaCard";
 import Image from "next/image";
 
@@ -40,7 +39,7 @@ export default function Home() {
 
           {/* Header */}
           <div className="flex m-4 pt-6 text-3xl md:text-5xl font-bold italic underline underline-offset-8 decoration-1 decoration-dark_rutgers_red">
-            <h1 className="">About the</h1>
+            <h1 className="">About</h1>
             <h1 className="text-dark_rutgers_red">&nbsp;GS-LSAMP</h1>
           </div>
           
