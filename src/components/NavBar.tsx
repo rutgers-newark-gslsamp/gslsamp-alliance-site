@@ -74,8 +74,8 @@ const NavBar: React.FC<{}> = () => {
 
                 {/* mobile nav bar*/}
                 {isVisible && (
-                    <div className='w-screen bg-white z-50 mobile_nav'>
-                        <ul className='w-screen grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap my-1 mx-auto list-none no-underline nav-page-list italic' id="bottom-nav-page-list">
+                    <div className='w-screen bg-white py-1 z-50 mobile_nav italic'>
+                        {/* <ul className='w-screen grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap my-1 mx-auto list-none no-underline nav-page-list italic' id="bottom-nav-page-list">
                             <li className='w-screen h-full flex justify-center items-center border-b'>
                                 <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center' href="/">Home</Link>
                             </li>
@@ -94,7 +94,26 @@ const NavBar: React.FC<{}> = () => {
                             <li className='w-full h-full flex justify-center items-center border-b'>
                                 <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/contact">Contact Us</Link>
                             </li>
-                        </ul>
+                        </ul> */}
+
+                        <div className='w-screen border-b'>
+                            <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center py-1' href="/">Home</Link>
+                        </div>
+                        <div className='w-screen border-b'>
+                            <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center py-1' href="/eligibility">Eligibility & Benefits</Link>
+                        </div>
+                        <div className='w-screen border-b'>
+                            <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center py-1' href="/events">Events</Link>
+                        </div>
+                        <div className='w-screen border-b'>
+                            <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center py-1' href="/publications">Publications</Link>
+                        </div>
+                        <div className='w-screen border-b'>
+                            <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center py-1' href="/faq">FAQs & Resources</Link>
+                        </div>
+                        <div className='w-screen border-b'>
+                            <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center py-1' href="/contact">Contact Us</Link>
+                        </div>
                     </div>
                 )}      
             </nav>
