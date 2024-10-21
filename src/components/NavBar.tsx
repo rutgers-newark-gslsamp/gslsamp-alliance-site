@@ -75,27 +75,6 @@ const NavBar: React.FC<{}> = () => {
                 {/* mobile nav bar*/}
                 {isVisible && (
                     <div className='w-screen bg-white py-1 z-50 mobile_nav italic'>
-                        {/* <ul className='w-screen grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap my-1 mx-auto list-none no-underline nav-page-list italic' id="bottom-nav-page-list">
-                            <li className='w-screen h-full flex justify-center items-center border-b'>
-                                <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center' href="/">Home</Link>
-                            </li>
-                            <li className='w-full h-full flex justify-center items-center border-b'>
-                                <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/eligibility">Eligibility & Benefits</Link>
-                            </li>
-                            <li className='w-full h-full flex justify-center items-center border-b'>
-                                <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/events">Events</Link>
-                            </li>
-                            <li className='w-full h-full flex justify-center items-center border-b'>
-                                <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/publications">Publications</Link>
-                            </li>
-                            <li className='w-full h-full flex justify-center items-center border-b'>
-                                <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/faq">FAQs & Resources</Link>
-                            </li>
-                            <li className='w-full h-full flex justify-center items-center border-b'>
-                                <Link onClick={hideDiv} className='flex items-center justify-center mobile_nav_item' href="/contact">Contact Us</Link>
-                            </li>
-                        </ul> */}
-
                         <div className='w-screen border-b'>
                             <Link onClick={hideDiv} className='mobile_nav_item flex items-center justify-center py-1' href="/">Home</Link>
                         </div>

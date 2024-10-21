@@ -16,7 +16,7 @@ const StaffCard: React.FC<StaffCardProps> = ({ picture, name, role, university, 
             <Image
                 src={picture}
                 alt={name}
-                className="w-32 h-32 rounded-full object-cover m-4"
+                className="w-32 h-32 rounded-full object-cover object-top m-4"
             />
             <div className="text-center text-white w-full h-full rounded-b-3xl bg-gradient-to-t from-rutgers_red to-dark_rutgers_red flex flex-col items-center justify-center">
                 <h3 className="text-base font-bold">{name}</h3>
