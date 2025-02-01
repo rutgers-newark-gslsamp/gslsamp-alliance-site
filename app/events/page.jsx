@@ -38,7 +38,7 @@ export default function Events() {
 
                                 {/* YouTube Video */}
                                 <iframe
-                                    src="https://www.youtube.com/embed/t2HxIdkXPDw?si=-Sc8HLdXgqCbASYO" 
+                                    src="https://www.youtube.com/embed/ZWCDa0F0UVk?si=Gjrgs5GA5KI9rY_7" 
                                     title="YouTube video player" 
                                     frameBorder="0" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
