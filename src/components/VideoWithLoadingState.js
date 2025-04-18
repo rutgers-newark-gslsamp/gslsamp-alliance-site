@@ -1,9 +1,14 @@
 // New VideoWithLoadingState.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactPlayer from 'react-player';
 
 const VideoWithLoadingState = ({ url }) => {
   const [isLoading, setIsLoading] = useState(true);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => { //useEffect prop is for delaying the video carousel. This component will only render when the it is on client side preventing any hydration errors
+    setIsClient(true);
+  }, []);
 
   const handleReady = () => {
     setIsLoading(false);
@@ -13,6 +18,8 @@ const VideoWithLoadingState = ({ url }) => {
     setIsLoading(false);
     console.error('Failed to load video');
   };
+  if (!isClient) {
+    return null; }
 
   return (
     <div className='flex justify-center react-player'>

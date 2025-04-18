@@ -12,7 +12,7 @@ interface SocialMediaCardProps {
 const SocialMediaCard: React.FC<SocialMediaCardProps> = ({ picture, profileName, banner, children }) => {
     return (
         <>
-            <div className="drop-shadow w-[22rem] lg:w-[24rem] h-[18rem] m-8 bg-white rounded-3xl text-center bg-white mx-auto">
+            <div className="drop-shadow w-[22rem] lg:w-[24rem] h-[18rem] m-8 bg-white rounded-3xl text-center mx-auto">
                 {/* Banner */}
                 <div className="sc_banner rounded-t-3xl">
                     <Image src={banner} alt="Social Media Banner" className="rounded-t-3xl relative bottom-1"/>

@@ -31,7 +31,7 @@ const CarouselHero = ({ images }) => {
   return (
     <div className="relative flex flex-col xl:flex-row justify-center border-gray-300 drop-shadow-xl bg-white"> 
       
-      <div className='bg-white w-full xl:w-[50%] mx-auto pt-[2rem] xl:pl-[10rem] my-auto flex flex-col'>
+      <div className='bg-white w-full xl:w-1/3 mx-auto pt-[2rem] my-auto flex flex-col'>
         <h1 className='italic text-gray-500 text-4xl text-center'>Garden State</h1>
         <h1 className='italic text-dark_rutgers_red text-8xl text-center'>LSAMP</h1>
         <h1 className='text-gray-400 text-lg text-center'>Louis Stokes Alliance for Minority Participation</h1>
@@ -46,7 +46,7 @@ const CarouselHero = ({ images }) => {
           {images.map((_, index) => (
             <div
               key={index}
-              className={`w-2 h-2 rounded-full ${index === currentImageIndex ? 'bg-white' : 'bg-gray-400'}`}
+              className={`w-2 h-2 rounded-full ${index === currentImageIndex ? 'bg-gray-300' : 'bg-gray-500'}`}
               style={{ cursor: 'pointer' }}
               onClick={() => setCurrentImageIndex(index)}
             />
